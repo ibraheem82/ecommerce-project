@@ -1,0 +1,9 @@
+ {% comment %} we are using the auto escape because we want to render inside it  
+ this is a save way of rendering an html when sending an email  {% endcomment %}
+{% autoescape off %}
+    hi {{user.first_name}},
+
+    YOUR ORDER HAS BEEN RECEIVED
+
+    Order Number: {{order.order_number}}
+{% endautoescape %}
