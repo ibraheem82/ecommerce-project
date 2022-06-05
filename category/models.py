@@ -13,7 +13,8 @@ class Category(models.Model):
     cat_image = models.ImageField(upload_to='photos/categories', blank=True)
     
     
-    # ===> overiding the name category in the django admin panel 
+    # ===> overiding the name [category] in the django admin panel
+    # ===> the name will show under our [app table] in the admin panel
     class Meta:
         verbose_name = 'category'
         verbose_name_plural = 'categories'
