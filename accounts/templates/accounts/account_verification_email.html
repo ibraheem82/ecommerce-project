@@ -1,0 +1,14 @@
+ {% comment %} we are using the auto escape because we want to render inside it  
+ this is a save way of rendering an html when sending an email  {% endcomment %}
+{% autoescape off %}
+    hi {{user.first_name}},
+
+    <h2>click on the link below to activate your account</h2>
+
+    {% comment %} please click on the below llink to confirm your registeration
+ when the user click on the link it wil  go to the activate link 
+ and automatically the link will get expired  {% endcomment %}
+    http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+    If you think it's not you, please ignore this email.✉
+{% endautoescape %}
