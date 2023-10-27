@@ -171,21 +171,21 @@ MESSAGE_TAGS = {
 # ========> This is the configuration of the email host <========
 
 # =====> STMP configuration
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-# EMAIL_HOST = 'smtp.gmail.com'
-# # EMAIL_HOST = 'localhost'
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = 'kimberlydorathy39@gmail.com'
-# EMAIL_HOST_PASSWORD = 'ibraheemdroid82022' 
-# EMAIL_USE_TLS = True
-# ACCOUNT_EMAIL_VERIFICATION = 'none'
+EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST = 'localhost'
+EMAIL_PORT = 467
+EMAIL_HOST_USER = 'astrodev001@gmail.com'
+EMAIL_HOST_PASSWORD = 'omrjwvnhrssdbvbv' 
+EMAIL_USE_TLS = True
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 # socket.getaddrinfo('localhost', 8080)
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = str(BASE_DIR.joinpath('sent_emails'))
+# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+# EMAIL_FILE_PATH = str(BASE_DIR.joinpath('sent_emails'))
 
 
 # EMAIL_BACKEND = 'django_mailjet.backends.MailjetBackend'
